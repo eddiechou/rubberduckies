@@ -5,7 +5,7 @@ var cors = require('express-cors')
 const app = express()
 
 app.use(cors({
-  allowedOrigins: ['https://pearl-jam-game-server.herokuapp.com/']
+  allowedOrigins: ['https://site@site.com/']
 }))
 
 app.use(express.static(__dirname + '/../client/dist'))

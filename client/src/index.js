@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 /* * Utils * */
 import 'react-hot-loader/patch'
 import { AppContainer } from 'react-hot-loader'
-import store from './store'
+// import store from './store'
 import RedBox from 'redbox-react'
 
 /* * Components * */
@@ -27,9 +27,7 @@ consoleErrorReporter.propTypes = {
 const render = function (Component) {
   ReactDOM.render(
     <AppContainer errorReporter={consoleErrorReporter}>
-      <Provider store={store}>
         <Component />
-      </Provider>
     </AppContainer>,
     document.getElementById('root')
   )
